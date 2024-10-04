@@ -4,7 +4,8 @@
   "description": "Negative Base Calculator",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node index.js",
+    "deploy": "node gh-pages.js"
   },
   "author": "OMANSAK",
   "license": "ISC",
