@@ -6,6 +6,11 @@ Negative-base positional numeral systems are formed by prefixing nega- keyword t
 ### Application
 https://omansak.github.io/negative-base-calculator/
 
+### Commands 
+- Install packages : `npm install`
+- Run : `npm run serve`
+- Deploy GH Pages : `npm run deploy`
+
 <section style="overflow: auto;">
     <h3>References</h3>
     <ul>
