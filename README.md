@@ -4,7 +4,7 @@ A negative base is a numeral system where the base (or radix) is a negative inte
 Negative-base positional numeral systems are formed by prefixing nega- keyword to the name of the corresponding positive-base system; such as negadecimal (base −10) corresponds to decimal (base 10), negabinary (base −2) to binary (base 2), negaternary (base −3) to ternary (base 3), and negaquaternary (base −4) to quaternary (base 4).
 
 ### Application
-https://omansak.github.io/negative-base-calculator/
+[https://omansak.github.io/negative-base-calculator/](https://omansak.github.io/negative-base-calculation/)
 
 ### Commands 
 - Install packages : `npm install`
