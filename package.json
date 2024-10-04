@@ -9,6 +9,7 @@
   "author": "OMANSAK",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "live-server": "^1.2.2",
     "prettier": "^3.3.3"
   }
