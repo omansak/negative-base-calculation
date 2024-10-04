@@ -120,7 +120,6 @@
     return [min, max];
   };
 
-
   const getNegativeBaseValue = () => {
     const val = document.getElementById("negative-base").value;
     if (!isNaN(val)) {
@@ -185,11 +184,10 @@
     setConverterNegativeBaseResult(NegativeBase.base, convertDecimalToNegativeBase(NegativeBase.base, NegativeBase.digit, el.value));
 
     el = document.getElementById("negative-base-number-i");
-    // el.value = convertDecimalToNegativeBase(NegativeBase.base, NegativeBase.digit, NegativeBase.range[0]);
-    el.value = "212";
-    const el2 = document.getElementById("negative-base-number-ii");
-    // el.value = convertDecimalToNegativeBase(NegativeBase.base, NegativeBase.digit, NegativeBase.range[1]);
-    el2.value = "120";
+    el.value = convertDecimalToNegativeBase(NegativeBase.base, NegativeBase.digit, NegativeBase.range[0]);
+
+    el = document.getElementById("negative-base-number-ii");
+    el.value = convertDecimalToNegativeBase(NegativeBase.base, NegativeBase.digit, NegativeBase.range[1]);
 
     triggerCalculateResult();
   };
