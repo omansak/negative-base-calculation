@@ -101,6 +101,26 @@
     return undefined;
   };
 
+  const calculateNegativeBaseRange = (base, digit) => {
+    let arrMin = [];
+    let arrMax = [];
+
+    for (let idx = 1; idx <= digit; idx++) {
+      arrMin.push(idx % 2 ? 0 : base - 1);
+      arrMax.push(idx % 2 ? base - 1 : 0);
+    }
+
+    arrMin = arrMin.reverse();
+    arrMax = arrMax.reverse();
+
+    const min = convertNegativeBaseToDecimal(base, arrMin);
+    const max = convertNegativeBaseToDecimal(base, arrMax);
+
+    setNegativeBaseRange(base, arrMin, min, arrMax, max);
+    return [min, max];
+  };
+
+
   const getNegativeBaseValue = () => {
     const val = document.getElementById("negative-base").value;
     if (!isNaN(val)) {
@@ -152,25 +172,6 @@
         document.getElementById("negative-base-result").innerText = "Undefined (Out of range)";
       }
     }
-  };
-
-  const calculateNegativeBaseRange = (base, digit) => {
-    let arrMin = [];
-    let arrMax = [];
-
-    for (let idx = 1; idx <= digit; idx++) {
-      arrMin.push(idx % 2 ? 0 : base - 1);
-      arrMax.push(idx % 2 ? base - 1 : 0);
-    }
-
-    arrMin = arrMin.reverse();
-    arrMax = arrMax.reverse();
-
-    const min = convertNegativeBaseToDecimal(base, arrMin);
-    const max = convertNegativeBaseToDecimal(base, arrMax);
-
-    setNegativeBaseRange(base, arrMin, min, arrMax, max);
-    return [min, max];
   };
 
   const clearInputs = () => {
